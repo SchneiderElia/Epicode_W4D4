@@ -361,3 +361,14 @@ nav {
 .bi-heart-fill{
     color: black;
 }
+
+
+#women{
+    cursor: pointer;
+}
+
+
+
+#man{
+    cursor: pointer;
+}
