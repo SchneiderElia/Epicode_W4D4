@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+}
+
+
+
+.xs{
+    display: flex;
+    margin-top: 80px;
+    
+}
+
+.xd{
+    
+    margin-top: 120px;
+    
+}
+
+.img{
+    width: 800px;
+}
+
+.productName{
+    font-family: "Lexend Giga";
+    font-size: 70px;
+}
+
+.productDescription {
+    display: flex;
+    width: 80%;
+    margin-top: 70px;
+}
+
+
+.box{
+    border: 2px solid rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+   
+    
+}
+
+.active{
+    border: 2px solid rgb(255, 0, 234);
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.productPrice {
+    margin-top: 40px;
+    font-size: 27px;
+    font-family:monospace;
+    font-weight: 300;
+}
+
+.buttonAddFav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    flex-wrap: wrap;
+    border-radius: 100px;
+    background-color: #ffffff2f;
+   font-family: "Lexend Mega";
+   font-weight: 500;
+   font-size: clamp(1rem, 0.9348rem + 0.3478vw, 1.25rem);
+   z-index: 20;
+  
+}
+
+.bi{
+    margin-top: 2px;
+}
+
+.buttonAddCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+    border-radius: 100px;
+    background-color: #ffffff2f;
+   font-family:"kanit";
+   font-weight: 500;
+   font-size: clamp(1rem, 0.9348rem + 0.3478vw, 1.25rem);
+   z-index: 20;
+  
+}

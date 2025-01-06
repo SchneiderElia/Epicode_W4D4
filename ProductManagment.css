@@ -1,0 +1,38 @@
+#content, #database {
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+#add{
+    cursor: pointer;
+}
+
+#title {
+    margin-top: 90px;
+    margin-left: 70px;
+    font-family: "Kanit";
+    font-weight: 200;
+}
+
+#nameProduct, #brandName, #price, #description, #URL, #Category{
+    padding: 5px 20px;
+    border-radius: 100px;
+    border: 2px solid black;
+    
+}
+
+#description {
+    border-radius: 12px;
+    height: 200px;
+    margin-top: 40px;
+}
+
+#Category{
+    margin-bottom: 68px;
+    cursor: pointer;
+}
+
+#createProductButton{
+    width: 150px;
+    border-radius: 100px;
+}

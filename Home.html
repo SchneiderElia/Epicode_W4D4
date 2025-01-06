@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,14 +21,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&display=swap" rel="stylesheet">
+    </link>
     <!-- google font end -->
-    <link href="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-    " rel="stylesheet">
-    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="HomeStyle.css">
+    <link rel="stylesheet" href="ProductPage.css">
     <title>NYXARA - Home</title>
 </head>
 
@@ -36,7 +36,9 @@
         <div class="container-fluid mt-3 ps-3 pe-3">
             <div class="row d-flex align-items-center">
                 <div class="col-4">
+                    <a href="Home.html">
                     <h1 id="logo">NYXARA</h1>
+                </a>
                 </div>
                 <div class="col-4 d-flex justify-content-center d-none d-lg-flex">
                     <nav>
@@ -70,10 +72,39 @@
                     </navSM>
                 </div>
                 <div class="col-lg-4 col-3 d-flex justify-content-end align-items-center gap-3">
-                    <i class="bi bi-person-circle fs-2"></i>
+
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i id="account" class="bi bi-person-circle fs-2"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header justify-content-center">
+                                    <h1 class="logo" style="color: white;" id="exampleModalLabel">NYXARA</h1>
+                                   <!--  <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button> -->
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-primary">Log in</button>
+                                    <button type="button" class="btn btn-primary">Sing in</button>
+                                    <a href="ProductManagment.html">
+                                    <button id="store" type="button" class="btn btn-primary" data-bs-dismiss="modal">Menagment Store</button>
+                                     </a>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <i class="bi bi-bag-fill fs-3"></i>
                     <div id="bubble">
-                        <p class="mt-3">0</p>
+                        <p class="mt-3" id="bubbleNum">0</p>
                     </div>
                 </div>
             </div>
@@ -101,49 +132,33 @@
                     <div class="d-flex mt-5">
                         <p class="NEO">Neo-Kyoto</p>
                     </div>
-                    
-                </div> 
+
+                </div>
             </div>
-        </div>  
+        </div>
     </section>
-     <!--     /* /////////////////  SECTION HOME lv BUTTONS  ///////////////////// */ -->
-    <div class="button">  
-            <button class="BTN p-0" type="button">Decode Collection</button>
-            <button class="BTN p-0" type="button">Shop Now</button>      
+    <!--     /* /////////////////  SECTION HOME lv BUTTONS  ///////////////////// */ -->
+    <div id="btnHome" class="button">
+        <button class="BTN p-0" type="button">Decode Collection</button>
+        <button class="BTN p-0" type="button">Shop Now</button>
     </div>
-     <!--     /* /////////////////  SECTION ONE  ///////////////////// */ -->
-          <div class="" id="carosel-home">
-            <div class="carosel-home">
-               
-                    <div class="splide__track">
-                      <ul class="splide__list">
-                        <li class="splide__slide">Slide 01
-                            <div style="background-color: rgb(0, 0, 0); width: 300px; height: 400px">
-                            </div>
-                        </li>
-                        <li class="splide__slide">Slide 02
-                            <div style="background-color: rgb(0, 0, 0); width: 300px; height: 400px"></div>
-                        </li>
-                        <li class="splide__slide">Slide 03
-                            <div style="background-color: rgb(0, 0, 0); width: 300px; height: 400px"></div>
-                        </li>
-                        <li class="splide__slide">Slide 04
-                            <div style="background-color: rgb(0, 0, 0); width: 300px; height: 400px"></div>
-                        </li>
-                        
-                      </ul>
-                    </div>
-            
-            </div>
-          </div>
+    <!--     /* /////////////////  SECTION ONE  ///////////////////// */ -->
+    <section id="collection" class="container">
+
+
+    </section>
+    <!--     /* /////////////////  SECTION TWO  ///////////////////// */ -->
+    <div id="productPage" class="container-fluid d-flex ">
+
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
 <script src="HomeScript.js"></script>
+<script src="collection.js"></script>
+<script src="cart,js"></script>
+
 
 
 </html>
