@@ -51,7 +51,7 @@ function crateContent(){
 
             
             
-            /////////////////// content element join in to papeProduct  /////////////// 
+            /////////////////// content element join in to page Product  /////////////// 
            
              ///////////////////  div xs  /////////////// 
             let xs = document.createElement('div')
@@ -251,3 +251,9 @@ function crateContent(){
       .catch(err => console.log("Something when wrong = " + err))
 }crateContent()
  
+
+
+let women = document.getElementById('women')
+women.addEventListener('click', ()=>{
+ women.style.color = 'red'
+})

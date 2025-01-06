@@ -1,8 +1,22 @@
 ///////////////////  SHOP DATABASE  /////////////// 
 
-const list = ['Database']
+let list = ['Database']
 console.log(list)
 
+/* let test = list.slice(0,13);
+console.log('look',test) */
+
+
+// INFO POINT collection
+
+// 0-12 jacketBoy
+// 13-24 jacketGirl
+// 25-36 hoodyBoy
+// 26-48 hoodyGirl
+// 49- 58 kimonoBoty
+// 59-68 kimonoGirl
+// 69-81 shoesBoy
+// 82-95 shoesGirl 
 
 fetch(url, {
     headers: {
@@ -390,7 +404,7 @@ const kimonoBoy = [
 
 ]
 
-const kimonogirl = [
+const kimonoGirl = [
 
   { name:"Sakura Burst Short",
     description:"Fai esplodere il tuo stile con il Sakura Burst Short Kimono, un capo che unisce la delicatezza dei fiori di ciliegio con l'energia dirompente dello streetwear. Questo kimono corto, realizzato in un tessuto leggero e fluido, presenta un design audace che combina una base bianca e nera con una stampa di fiori di ciliegio e motivi grafici in un rosa vibrante. Le ampie maniche a tre quarti e la vestibilità comoda offrono libertà di movimento, mentre la cintura in vita permette di personalizzare la silhouette. Il Sakura Burst Short Kimono è la scelta perfetta per chi vuole esprimere la propria femminilità con un capo grintoso e originale, che reinterpreta la tradizione giapponese in chiave moderna.",
@@ -636,7 +650,7 @@ const shoesGirl = [
   },
 ]
 
-const jacketGirltestqsa = [
+/* const jacketGirltestqsa = [
 
 
     {   name:"2bestemmie 234",
@@ -645,16 +659,13 @@ const jacketGirltestqsa = [
         imageUrl:"https://cdn.midjourney.com/84634bce-99cd-4fbe-a223-1538b324f45c/0_0.jpeg",
         price: '18',
     }
-]
+] */
 
 ///////////////////  CONTROLL E POST by this page  /////////////// 
 
-const category = []
-let createdProducts = ['Category'];
-console.log(createdProducts)
 
 
-async function createProductIfNotExist(obj) {
+/* async function createProductIfNotExist(obj) {
     try {
       const response = await fetch(url + "?name=" + obj.name, {
         headers: {
@@ -720,9 +731,8 @@ async function createProductIfNotExist(obj) {
       throw error;
     }
   }
-  
-  jacketGirltestqsa.forEach(obj => createProductIfNotExist(obj));
-
+   */
+  //----.forEach(obj => createProductIfNotExist(obj));
 
 
 
@@ -793,3 +803,4 @@ fetch("https://striveschool-api.herokuapp.com/api/product/" + productId, {
     }
   })
   .catch(err => console.log("Errore nella richiesta:", err)) */
+
